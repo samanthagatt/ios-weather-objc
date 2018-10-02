@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SMFViewController : UIViewController
+@class SMFDailyForecastController;
 
+@interface SMFViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate>
 
+@property SMFDailyForecastController *dailyForecastController;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *zipCodeSearchBar;
+@property (weak, nonatomic) IBOutlet UICollectionView *forecastCollectionView;
 
 @end
 

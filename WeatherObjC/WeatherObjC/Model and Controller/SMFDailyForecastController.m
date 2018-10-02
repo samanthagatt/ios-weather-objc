@@ -23,7 +23,7 @@
 @implementation SMFDailyForecastController
 
 static NSString * const baseURLString = @"api.openweathermap.org/data/2.5/forecast/daily";
-static NSString * const apiKey = @"b0af1af927bf7128f57f01707c1f1459";
+static NSString * const apiKey = @"1340d66bb372ff93adebd79d41eea048";
 
 #pragma mark Initializer
 
