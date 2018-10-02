@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		22EA05432163F3E700A61412 /* SMFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EA05422163F3E700A61412 /* SMFCollectionViewCell.m */; };
 		22EA05472163F78600A61412 /* SMFDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EA05462163F78600A61412 /* SMFDailyForecast.m */; };
+		22EA054A2164026700A61412 /* SMFDailyForecastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EA05492164026700A61412 /* SMFDailyForecastController.m */; };
 		467D7F682163766F00E7FF73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467D7F672163766F00E7FF73 /* AppDelegate.m */; };
 		467D7F6B2163766F00E7FF73 /* SMFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467D7F6A2163766F00E7FF73 /* SMFViewController.m */; };
 		467D7F6E2163766F00E7FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467D7F6C2163766F00E7FF73 /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 		22EA05422163F3E700A61412 /* SMFCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFCollectionViewCell.m; sourceTree = "<group>"; };
 		22EA05452163F78600A61412 /* SMFDailyForecast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFDailyForecast.h; sourceTree = "<group>"; };
 		22EA05462163F78600A61412 /* SMFDailyForecast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFDailyForecast.m; sourceTree = "<group>"; };
+		22EA05482164026700A61412 /* SMFDailyForecastController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFDailyForecastController.h; sourceTree = "<group>"; };
+		22EA05492164026700A61412 /* SMFDailyForecastController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFDailyForecastController.m; sourceTree = "<group>"; };
 		467D7F632163766F00E7FF73 /* WeatherObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467D7F662163766F00E7FF73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		467D7F672163766F00E7FF73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 			children = (
 				22EA05452163F78600A61412 /* SMFDailyForecast.h */,
 				22EA05462163F78600A61412 /* SMFDailyForecast.m */,
+				22EA05482164026700A61412 /* SMFDailyForecastController.h */,
+				22EA05492164026700A61412 /* SMFDailyForecastController.m */,
 			);
 			path = "Model and Controller";
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				467D7F6B2163766F00E7FF73 /* SMFViewController.m in Sources */,
 				467D7F762163767000E7FF73 /* main.m in Sources */,
 				467D7F682163766F00E7FF73 /* AppDelegate.m in Sources */,
+				22EA054A2164026700A61412 /* SMFDailyForecastController.m in Sources */,
 				22EA05472163F78600A61412 /* SMFDailyForecast.m in Sources */,
 				22EA05432163F3E700A61412 /* SMFCollectionViewCell.m in Sources */,
 			);
