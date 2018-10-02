@@ -6,17 +6,18 @@
 //  Copyright © 2018 Lambda School. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SMFViewController.h"
 
-@interface ViewController ()
+@interface SMFViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SMFViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 
