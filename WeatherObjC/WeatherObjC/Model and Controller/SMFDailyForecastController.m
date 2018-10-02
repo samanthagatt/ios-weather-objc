@@ -22,7 +22,7 @@
 
 @implementation SMFDailyForecastController
 
-static NSString * const baseURLString = @"api.openweathermap.org/data/2.5/forecast/daily";
+static NSString * const baseURLString = @"https://api.openweathermap.org/data/2.5/forecast/daily";
 static NSString * const apiKey = @"1340d66bb372ff93adebd79d41eea048";
 
 #pragma mark Initializer
@@ -49,7 +49,7 @@ static NSString * const apiKey = @"1340d66bb372ff93adebd79d41eea048";
 
 #pragma mark Network fetching
 
-- (void)fetchDailyForecastsByZipCode:(NSString *)zipCode completionHandler:(void (^)(NSArray *people, NSError *))completionHandler
+- (void)fetchDailyForecastsByZipCode:(NSString *)zipCode completionHandler:(void (^)(NSArray *dailyForecasts, NSError *))completionHandler
 {
     #pragma mark url construction
     
@@ -91,6 +91,10 @@ static NSString * const apiKey = @"1340d66bb372ff93adebd79d41eea048";
             SMFDailyForecast *dailyForecast = [[SMFDailyForecast alloc] initWithDictionary:dictionary cityName:cityName];
             [dailyForecasts addObject:dailyForecast];
         }
+        
+        [[self internalArray] addObjectsFromArray:dailyForecasts];
+        
+        completionHandler(dailyForecasts, nil);
         
     }] resume];
 }

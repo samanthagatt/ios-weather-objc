@@ -37,6 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[self zipCodeSearchBar] setDelegate:self];
     [[self forecastCollectionView] setDelegate:self];
     [[self forecastCollectionView] setDataSource:self];
 }
@@ -50,6 +51,7 @@
             [[self forecastCollectionView] reloadData];
         });
     }];
+    [[self forecastCollectionView] reloadData];
 }
 
 
@@ -61,7 +63,7 @@
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
-    SMFCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"" forIndexPath:indexPath];
+    SMFCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ForecastCell" forIndexPath:indexPath];
     
     SMFDailyForecast *dailyForecast = [[[self dailyForecastController] dailyForecasts] objectAtIndex:[indexPath row]];
     [[cell weatherImageView] setImage:[dailyForecast weatherImage]];
